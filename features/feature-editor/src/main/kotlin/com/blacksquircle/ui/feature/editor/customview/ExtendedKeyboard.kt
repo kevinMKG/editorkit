@@ -17,6 +17,7 @@
 package com.blacksquircle.ui.feature.editor.customview
 
 import android.content.Context
+import android.graphics.Color
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -89,6 +90,7 @@ class ExtendedKeyboard @JvmOverloads constructor(
             fun bind(item: String) {
                 char = item
                 binding.itemTitle.text = char
+                binding.itemTitle.setTextColor(Color.WHITE)
             }
         }
     }
